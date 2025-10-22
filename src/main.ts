@@ -1,8 +1,6 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
-// If using strict type checking, you may need to install @nestjs/swagger types:
-// npm install --save-dev @nestjs/swagger
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);

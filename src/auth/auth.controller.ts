@@ -19,7 +19,6 @@ export class AuthController {
     const user = await this.authService.validateUser(email, senha);
     const result = this.authService.login(user);
 
-    // Aqui depois registraremos o log de acesso (data/hora, IP, usuário)
     console.log(`Login bem-sucedido de ${user.email} vindo do IP ${ip}`);
 
     return result;
